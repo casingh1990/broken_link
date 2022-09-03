@@ -18,7 +18,7 @@ _ide_helper.php
 .phpunit.result.cache
 /public/*LICENSE*
 storage/api-docs
-/vendor/*
+vendor
 vendor/composer/*
 node_modules
 .vscode
