@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'v9.3.6',
-    'version' => '9.3.6.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '30ab618d4621333df18119b0d2fb7decd46de1b8',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -384,12 +384,30 @@
         0 => 'v9.27.0',
       ),
     ),
+    'inertiajs/inertia-laravel' => 
+    array (
+      'pretty_version' => 'v0.6.3',
+      'version' => '0.6.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '540b953ec383364264f9bd633849db16560a4461',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
       array (
         0 => '*',
       ),
+    ),
+    'laravel/breeze' => 
+    array (
+      'pretty_version' => 'v1.12.0',
+      'version' => '1.12.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6d95e9aacbe992e19c81d5cd6f7eec994e50dd8d',
     ),
     'laravel/framework' => 
     array (
@@ -402,12 +420,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'v9.3.6',
-      'version' => '9.3.6.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '30ab618d4621333df18119b0d2fb7decd46de1b8',
     ),
     'laravel/pint' => 
     array (
@@ -429,12 +447,12 @@
     ),
     'laravel/sanctum' => 
     array (
-      'pretty_version' => 'v3.0.1',
-      'version' => '3.0.1.0',
+      'pretty_version' => 'v2.15.1',
+      'version' => '2.15.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b71e80a3a8e8029e2ec8c1aa814b999609ce16dc',
+      'reference' => '31fbe6f85aee080c4dc2f9b03dc6dd5d0ee72473',
     ),
     'laravel/serializable-closure' => 
     array (
@@ -752,8 +770,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0|2.0|3.0',
-        1 => '1.0.0 || 2.0.0 || 3.0.0',
+        0 => '1.0.0 || 2.0.0 || 3.0.0',
+        1 => '1.0|2.0|3.0',
       ),
     ),
     'psr/simple-cache' => 
@@ -1251,6 +1269,15 @@
       array (
       ),
       'reference' => '34a41e998c2183e22995f158c581e7b5e755ab9e',
+    ),
+    'tightenco/ziggy' => 
+    array (
+      'pretty_version' => 'v1.4.6',
+      'version' => '1.4.6.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a9e0e078ae6f0768836bc640a80f4cf99fa3d08f',
     ),
     'tijsverkoyen/css-to-inline-styles' => 
     array (
