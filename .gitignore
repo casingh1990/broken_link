@@ -19,5 +19,6 @@ _ide_helper.php
 /public/*LICENSE*
 storage/api-docs
 /vendor/*
+vendor/composer/*
 node_modules
 .vscode
