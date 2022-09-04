@@ -69,6 +69,7 @@ import axios from 'axios';
                             <tr>
                                 <th style="width:20%">Name</th>
                                 <th style="width:70%">Link</th>
+                                <th style="width:5%">Status</th>
                                 <th>Edit</th>
                             </tr>
                             <tr v-for="link,i in links" :key="link.id">
@@ -83,6 +84,7 @@ import axios from 'axios';
                                         />
                                     </span>
                                 </td>
+                                <td>{{ link.status }}</td>
                                 <td>
                                     <button
                                         v-if="editStatus[link.id]"
