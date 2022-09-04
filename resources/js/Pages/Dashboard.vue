@@ -68,11 +68,11 @@ import axios from 'axios';
                         >
                             <tr>
                                 <th style="width:20%">Name</th>
-                                <th style="width:70%">Link</th>
-                                <th style="width:5%">Status</th>
+                                <th style="width:60%">Link</th>
+                                <th style="width:10%">Status</th>
                                 <th>Edit</th>
                             </tr>
-                            <tr v-for="link,i in links" :key="link.id">
+                            <tr class="link-row" v-for="link,i in links" :key="link.id">
                                 <td>{{ link.name }}</td>
                                 <td>
                                     <span v-if="editStatus[link.id]">{{ link.link }}</span>
@@ -84,7 +84,7 @@ import axios from 'axios';
                                         />
                                     </span>
                                 </td>
-                                <td>{{ link.status }}</td>
+                                <td>{{ statusNames[link.status] }}</td>
                                 <td>
                                     <button
                                         v-if="editStatus[link.id]"
@@ -108,19 +108,31 @@ import axios from 'axios';
     </BreezeAuthenticatedLayout>
 </template>
 
+<style scoped>
+    .link-row td {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+</style>
+
 <script>
 
 export default {
     name: 'Links',
     data() {
         return {
+            statusNames: [
+                "Unverified",
+                "Working",
+                "Broken",
+            ],
             links: [],
             currentPage: 1,
             maxPage: 1,
             newLink: {
                 name: '',
                 link: '',
-                status: 1,
+                status: 0,
             },
             editStatus: {},
         }
