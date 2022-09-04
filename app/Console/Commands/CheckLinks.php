@@ -41,7 +41,7 @@ class CheckLinks extends Command
             function ($links) use ($client) {
                 foreach ($links as $link) {
                     try {
-                        $response = $client->get($link->link);
+                        $response = $client->get($link->link, ['connect_timeout' => 5]);
 
                         if ($response->getStatusCode() !== 200) {
                             $link->status = Link::STATUS_BROKEN;

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LinkCheckController;
 use App\Http\Controllers\LinkController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,4 +21,5 @@ Route::middleware('auth:sanctum')->get(
         return $request->user();
     },
     Route::resource('links', LinkController::class),
+    Route::get('check-links', '\App\Http\Controllers\LinkCheckController@check'),
 );
