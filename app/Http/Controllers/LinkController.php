@@ -14,7 +14,7 @@ class LinkController extends Controller
      */
     public function index()
     {
-        return Link::all();
+        return Link::query()->paginate(50);
     }
 
     /**
@@ -77,11 +77,15 @@ class LinkController extends Controller
      */
     public function update(Request $request, Link $link)
     {
-        $link->update([
-            'name' => $request->input('name'),
-            'link' => $request->input('link'),
-            'status' => $request->input('status'),
-        ]);
+        Link::unguard();
+        $link->update(
+            [
+                'name' => $request->input('name'),
+                'link' => $request->input('link'),
+                'status' => $request->input('status'),
+            ]
+        );
+        Link::reguard();
 
         return $link->fresh();
     }
